@@ -1,0 +1,31 @@
+GET http://localhost:8000/users
+
+###
+GET http://localhost:8000/users/1
+
+###
+POST http://localhost:8000/users
+Content-Type: application/json
+
+{
+    "name": "Ignasius",
+    "email": "gery@gmail.com",
+    "gander": "male",
+    "address": "Bekasi",
+    "handphone": "082144182499"
+}
+
+###
+PATCH http://localhost:8000/users/4
+Content-Type: application/json
+
+{
+    "name": "Geryanto Saon",
+    "email": "saon@gmail.com",
+    "gander": "male",
+    "address": "Jakarta",
+    "handphone": "082144182499"
+}
+
+###
+DELETE http://localhost:8000/users/7
